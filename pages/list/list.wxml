@@ -1,0 +1,19 @@
+<view class="list-wrapper">
+  <scroll-view>
+      <!-- <HotGroup
+        wx:for="{{list}}" 
+        wx:key="index"
+        topItem="{{item}}"
+      >
+      </HotGroup> -->
+    <SongItem 
+        wx:for="{{list}}" 
+        wx:key="index"
+        imgSrc="{{item.albumpic_big}}"
+        songname="{{item.songname}}"
+        singername="{{item.singername}}"
+        album="{{item.album}}"
+        songurl="{{item.url}}"
+    ></SongItem>
+  </scroll-view>
+</view>

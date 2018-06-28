@@ -1,0 +1,15 @@
+<!--components/SongItem.wxml-->
+<view class='song-item'>
+    <view class='item-left'>
+        <image src='{{imgSrc}}' class='item-img' mode="widthFix"></image>
+    </view>
+    <view class='item-right'>
+        <view class='songname'>{{songname}}</view>
+        <view class='singername'>
+            {{singername}} - {{album}}
+        </view>
+        <!-- <view class='album'></view> -->
+        <view class='songurl'>{{songurl}}</view>
+    </view>
+    <view class="item-right-btn"><text class="arrow"></text></view>
+ </view>
