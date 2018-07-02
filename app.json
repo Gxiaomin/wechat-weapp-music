@@ -6,8 +6,28 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#31c27c",
+    "navigationBarTitleText": "QQ音乐",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "color": "#666",
+    "backgroundColor": "#fff",
+    "selectedColor": "#31c27c",
+    "position": "top",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "推荐"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "text": "歌曲列表"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "搜索"
+      }
+    ]
   }
 }

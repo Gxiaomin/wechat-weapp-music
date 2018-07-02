@@ -1,10 +1,13 @@
 /**app.wxss**/
+/* 全局引入iconfont */
+@import './assets/iconfont.wxss';
+
 .container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 200rpx;
-  box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
 } 
