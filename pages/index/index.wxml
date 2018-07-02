@@ -20,7 +20,7 @@
     <view class="broadcasting">
         <p calss="broadcasting-title">电台</p>
         <view class="broadcasting-body">
-            <view class="broadcasting-item">
+            <view class="broadcasting-item" bindtap="clickHandler">
                 <i class="icon iconfont icon-bofang1"></i>
                 <image class="broadcasting-image" mode="aspectFit" src="../../assets/images/track_radio_199_13_1.jpg"/>
                 <text>热歌</text>

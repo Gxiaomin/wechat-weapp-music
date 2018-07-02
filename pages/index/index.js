@@ -11,13 +11,6 @@ Page({
         '../../assets/images/296561.jpg',
         '../../assets/images/296978.jpg'
     ],
-    // wiperLinks: [
-    //     'http://y.qq.com/m/act/sfhd/129.html?ADTAG=myqq&amp;from=myqq&amp;channel=10007100',
-    //     'https://y.qq.com/msa/360/5_5615.html?ADTAG=myqq&amp;from=myqq&amp;channel=10007100',
-    //     'https://y.qq.com/m/act/KingCross/index.html?ADTAG=myqq&amp;from=myqq&amp;channel=10007100',
-    //     'https://y.qq.com/msa/362/35_5568.html?ADTAG=myqq&amp;from=myqq&amp;channel=10007100',
-    //     'https://y.qq.com/m/client/music_headline/index.html?_hidehd=1&amp;_button=2&amp;zid=852116&amp;ADTAG=myqq&amp;from=myqq&amp;channel=10007100'
-    // ],
     indicatorDots: true,
     autoplay: true,
     interval: 2000,
@@ -47,6 +40,11 @@ Page({
     this.setData({
       duration: e.detail.value
     })
+  },
+  //电台点击事件处理
+  clickHandler: function() {
+    console.log("click");
+    
   },
   onLoad: function () {
     // if (app.globalData.userInfo) {

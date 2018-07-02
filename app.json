@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/list/list"
+    "pages/list/list",
+    "pages/search/search"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -25,7 +26,7 @@
         "text": "歌曲列表"
       },
       {
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/search/search",
         "text": "搜索"
       }
     ]

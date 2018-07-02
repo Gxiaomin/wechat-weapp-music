@@ -21,12 +21,9 @@ Page({
             topid: 5
         },
         success: function(res) {
-            // console.log(res);
             that.setData({
                 'list': res.data.showapi_res_body.pagebean.songlist
             })
-            
-            console.log(that.data.list);
         }
     })
   },

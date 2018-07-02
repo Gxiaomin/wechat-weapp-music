@@ -1,0 +1,51 @@
+<!--pages/search/search.wxml-->
+<view class="search-wrapper">
+    <view class="search">
+        <view class="search-form">
+            <form bindreset="formReset">
+                <input 
+                    id="search-input" 
+                    class="search-input" 
+                    type="search" 
+                    autocomplete="off" 
+                    style="-webkit-appearance: textfield;" 
+                    autocorrect="off" 
+                    placeholder="搜索歌曲、歌单、专辑"
+                    placeholder-style="color: rgba(0,0,0,.3);"
+                    bindfocus="searchFocus"
+                    bindinput="bindKeyInput"
+                    confirm-type ="send"  
+                    value="{{inputValue}}"
+                />
+                <i class="icon iconfont icon-sousuo icon-search"></i>
+                <view wx:if="{{showDeleteBtn}}" class="icon iconfont icon-delete" catchtap="deleteClick"></view>
+            </form>
+        </view>
+        <view bindtap="cancelClick" wx:if="{{showCancelBtn}}" id="cancel-btn" class="search-bar-tip-text">取消</view>
+    </view>
+    <view class="search-bottom">
+        <view wx:if="{{showHotWrapper}}" class="hot-search">
+            <text class="title">热门搜索</text>
+            <view class="result-tag">
+                <view 
+                    wx:for="{{hotSearchArr}}"
+                    wx:key="{{index}}"
+                    data-ind="{{index}}"
+                    bindtap="hotItemClick"
+                    class="hot-tag {{current === index ? 'tag-active' : ''}}"
+                >{{item}}</view>
+            </view>
+        </view>
+        <view wx:else>
+            <SearchItem
+                wx:for="{{searchResultList}}"
+                wx:key="{{index}}"
+                songname="{{item.songname}}"
+                singername="{{item.singername}}"
+                albumpic="{{item.albumpic_big}}"
+                url="{{item.m4a}}"
+            >
+            </SearchItem>
+        </view>
+    </view>
+</view>

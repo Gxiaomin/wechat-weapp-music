@@ -1,0 +1,12 @@
+<!--components/searchlistitem/searchItem.wxml-->
+<view 
+    class="search-item"
+    url="{{url}}"
+    albumpic="{{albumpic}}"
+>
+    <i class="icon iconfont icon-15"></i>
+    <view class="item">
+        <p class="song name">{{songname}}</p>
+        <p class="song singer">{{singername}}</p>
+    </view>
+</view>
