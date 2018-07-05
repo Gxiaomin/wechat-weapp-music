@@ -36,14 +36,11 @@
                 >{{item}}</view>
             </view>
         </view>
-        <view wx:else>
+        <view wx:else class="search-result">
             <SearchItem
                 wx:for="{{searchResultList}}"
                 wx:key="{{index}}"
-                songname="{{item.songname}}"
-                singername="{{item.singername}}"
-                albumpic="{{item.albumpic_big}}"
-                url="{{item.m4a}}"
+                songInfo="{{item}}"
             >
             </SearchItem>
         </view>

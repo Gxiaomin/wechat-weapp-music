@@ -89,3 +89,10 @@
     color: #fc4524;
     border-color: #fc4524;
 }
+
+/* 搜索结果 */
+.search-result {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}

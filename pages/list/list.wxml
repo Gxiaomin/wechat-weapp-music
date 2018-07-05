@@ -3,11 +3,7 @@
     <SongItem 
         wx:for="{{list}}" 
         wx:key="index"
-        imgSrc="{{item.albumpic_big}}"
-        songname="{{item.songname}}"
-        singername="{{item.singername}}"
-        album="{{item.album}}"
-        songurl="{{item.url}}"
+        songInfo="{{item}}"
     ></SongItem>
   </scroll-view>
 </view>

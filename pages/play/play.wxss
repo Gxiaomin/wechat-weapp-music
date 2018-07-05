@@ -1,0 +1,143 @@
+/* pages/play/play.wxss */
+.play-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+#myAudio {
+    display:none;
+}
+.play-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* 设置模糊背景 */
+    -webkit-filter: blur(30px); /* Chrome, Safari, Opera */
+    filter: blur(30px);
+}
+
+.play-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 120rpx; */
+    padding: 20rpx;
+    box-sizing: border-box;
+    text-align: center;
+    z-index: 99;
+}
+
+.title-song, .title-singer {
+    font-size: 28rpx;
+    line-height: 28rpx;
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.title-singer {
+    margin-top: 10rpx;
+    font-size: 24rpx;
+    color: #666;
+}
+
+.play-circle {
+    width:550rpx;
+    height:550rpx;
+    margin:150rpx auto 0;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 99;
+}
+
+.song-img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 工具栏y样式*/
+.play-toolbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 180rpx;
+    background-color: #ffffff63;
+}
+
+.play-progress {
+    width: 100%;
+    height: 40rpx;
+    display: flex;
+    justify-content: center;
+}
+
+.time {
+    width: 10%;
+    height: 40rpx;
+    font-size: 24rpx;
+    text-align: center;
+    line-height: 40rpx;
+    color: #666;
+}
+
+.progress-box {
+    flex: 1;
+    height: 40rpx;
+    margin: 0 10rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.total-progress {
+    position: relative;
+    height: 10rpx;
+    background-color: #6666665c;
+    border-radius: 6rpx 6rpx;
+}
+
+.current-progress {
+    width: 10%;
+    height: 100%;
+    background-color: #31c27c;
+}
+
+.progress-btn {
+    position: absolute;
+    left: 10%;
+    top: -4rpx;
+    width: 18rpx;
+    height: 18rpx;
+    border-radius: 100%;
+    background-color: #fff;
+}
+
+/* 播放工具箱 */
+.play-box {
+    width: 100%;
+    padding: 20rpx 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon {
+    width: 80rpx;
+    line-height: 80rpx;
+    font-size: 60rpx;
+    color: #fff;
+}
+
+.icon-bofang, .icon-suspend_icon {
+    font-size: 80rpx;
+}

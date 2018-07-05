@@ -1,0 +1,42 @@
+<!--pages/play/play.wxml-->
+<view class="play-wrapper">
+    <audio 
+        poster="{{songInfo.albumpic_big}}" 
+        name="{{songInfo.songname}}" 
+        author="{{songInfo.singername}}" 
+        src="http://dl.stream.qqmusic.qq.com/C400003L08bD3d6KOo.m4a?guid=2372404032&vkey=15F36B01B297B31A83E56E51584457E79A62A84A5D11121F714DBCF2A3A8CD8D9765027C8CCC37A7F893CD4FC970037984CD97303E085EB9&uin=0&fromtag=38" 
+        id="myAudio" 
+        controls 
+        loop
+        bindtimeupdate="updatePlay"
+    ></audio>
+    <view class="play-title">
+        <view class="title-song">{{songInfo.songname}}</view>
+        <view class="title-singer">—— {{songInfo.singername}} ——</view>
+    </view>
+    <!-- 模糊背景 -->
+    <image src='{{songInfo.albumpic_big}}' class='play-img'></image>
+    <!-- 旋转动画区域 -->
+    <view class="play-circle">
+        <image src='{{songInfo.albumpic_big}}' class='song-img' ></image>
+    </view>
+    <!-- 操作面板 -->
+    <view class="play-toolbar">
+        <view class="play-progress">
+            <view class="time">00:00</view>
+            <view class="progress-box">
+                <view class="total-progress">
+                    <view class="current-progress"></view>
+                    <view class="progress-btn"></view>
+                </view>
+            </view>
+            <view class="time">{{duration}}</view>
+        </view>
+        <view class="play-box">
+            <view class="icon iconfont icon-shangyishou" bindtap=""></view>
+            <view wx:if="{{isPlay}}" class="icon iconfont icon-suspend_icon" bindtap="audioPause"></view>
+            <view wx:if="{{!isPlay}}" class="icon iconfont icon-bofang" bindtap="audioPlay"></view>
+            <view class="icon iconfont icon-kuaijin" bindtap=""></view>
+        </view>
+    </view>
+</view>

@@ -21,12 +21,12 @@
         <p calss="broadcasting-title">电台</p>
         <view class="broadcasting-body">
             <view class="broadcasting-item" bindtap="clickHandler">
-                <i class="icon iconfont icon-bofang1"></i>
+                <i class="icon iconfont icon-bofang"></i>
                 <image class="broadcasting-image" mode="aspectFit" src="../../assets/images/track_radio_199_13_1.jpg"/>
                 <text>热歌</text>
             </view>
             <view class="broadcasting-item">
-                <i class="icon iconfont icon-bofang1"></i>
+                <i class="icon iconfont icon-bofang"></i>
                 <image class="broadcasting-image" mode="aspectFit" src="../../assets/images/track_radio_307_13_1.jpg"/>
                 <text>一人一首招牌歌</text>
             </view>
@@ -35,12 +35,4 @@
     <view class="footer">
         <image src="../../assets/images/logo_footer.png"/>
     </view>
-    <!-- <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-      <button size="mini" type="primary" class="check-park-btn" bindtap="toCheckPark">获取歌曲列表</button>
-    </block>
-  </view> -->
 </view>

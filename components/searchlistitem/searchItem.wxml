@@ -1,12 +1,15 @@
 <!--components/searchlistitem/searchItem.wxml-->
 <view 
     class="search-item"
-    url="{{url}}"
-    albumpic="{{albumpic}}"
+    songInfo="{{songInfo}}"
+    bindtap="playSong"
 >
-    <i class="icon iconfont icon-15"></i>
+    <view class="icon-music">
+        <image wx:if="{{songInfo.albumpic_big}}" src='{{songInfo.albumpic_big}}' class='item-img' mode="widthFix"></image>
+        <i class="icon iconfont icon-iconset0163"></i>
+    </view>
     <view class="item">
-        <p class="song name">{{songname}}</p>
-        <p class="song singer">{{singername}}</p>
+        <p class="song name">{{songInfo.songname}}</p>
+        <p class="song singer">{{songInfo.singername}}</p>
     </view>
 </view>

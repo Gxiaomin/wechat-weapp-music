@@ -1,29 +1,11 @@
 // components/SongItem.js
+const {globalData} = getApp();
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-    songname: {            // 属性名
-        type: String,     // 类型（必填），目前接受的类型包括：String, Number, Boolean, Object, Array, null（表示任意类型）
-        value: '歌名'     // 属性初始值（可选），如果未指定则会根据类型选择一个
-    },
-    singername: {
-        type: String,
-        value: '歌手名'
-    },
-    album: {
-        type: String,
-        value: '专辑'
-    },
-    imgSrc: {
-        type: String,
-        value: '专辑图片'
-    },
-    songurl: {
-        type: String,
-        value: '歌曲地址'
-    }
+    songInfo: null
   },
 
   /**
@@ -37,6 +19,13 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    clickItem() {
+        //设置全局变量，保存当前歌曲信息
+        globalData.songInfo = this.properties.songInfo;
+        //跳转至播放页面
+        wx.navigateTo({
+            url: '../../pages/play/play?id=' + this.properties.songInfo.songid
+        })
+    }
   }
 })
